@@ -1,8 +1,12 @@
-#jumbotron .h1{
+h1{
     text-align: center;
 }
 
 
-#smallJumbotron{
+#smallJumbotron {
     background-color: white;
+}
+
+#TextArea{
+    text-align: center;
 }
