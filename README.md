@@ -18,5 +18,5 @@ The objective of this assignment is to create a random password generator. The f
 
 # URL
 
-https://github.com/kangb3/Password-Generator
-https://kangb3.github.io/Password-Generator/
+- https://github.com/kangb3/Password-Generator
+- https://kangb3.github.io/Password-Generator/
