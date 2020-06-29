@@ -23,12 +23,19 @@ function generatePassword(){
         // var confirmNum = true;
         // var confirmLowercase = false;
         // var confirmUppercase = false;
+
+        //Confirm box for user to select character type to include in generated password
         var confirmSpecialChar = confirm("Click OK to include special characters");
         var confirmNum = confirm("Click OK to include numeric characters");
         var confirmLowercase = confirm("Click OK to include lowercase characters");
         var confirmUppercase = confirm("Click OK to include uppercase characters");
         //var random = Math.floor(Math.random() * specialChar.length);
+
+        //Validates if user selects at least one character type
         if(confirmSpecialChar == true || confirmNum == true || confirmLowercase == true || confirmUppercase == true){
+
+            //Conditionals to checks each of the character types if selected
+            //The selected characters type will have their keys appended to a string var charSet
             if(confirmSpecialChar){
                 charSet += specialChar;
             }
@@ -57,6 +64,7 @@ function generatePassword(){
                 // }
                 //console.log(password);
             }
+            document.getElementById("TextArea").value = password
             
         }
 
