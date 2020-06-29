@@ -81,7 +81,7 @@ function copyPassword(){
     var copyText = document.getElementById("TextArea");
     copyText.select();
     document.execCommand("copy"); 
-    alert(`Your password, ${copyText.value} was copied to your clipboard.`);
+    alert("Your password " + copyText.value + " was copied to your clipboard.");
 
 }
 
