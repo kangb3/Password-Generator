@@ -1,54 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-<title>Password Generator</title>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
-<link rel="stylesheet" href="Assets/CSS/style.css">
-
-
-    
-
-
-<script src="script.js"></script>
-
-</head>
-
-
-<body>
-    <main class = "container pt-3">
-    <section class ="jumbotron">
-        <h1>Password Generator</h1> <br>
-        <section class = "jumbotron" id = "smallJumbotron">
-                <h2> Generate a Password</h2>
-            
-            <section class="form-group">
-                <section class="col-sm-12">
-                    <label for="TextArea"></label>
-                    <textarea class="form-control" id="TextArea" placeholder="Your secure password" rows="6"></textarea>
-                    <br>
-                    <section class="form-row justify-content-center">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Password Generator</title>
+      <!--Link to Bootstrap JavaScript-->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <!--Link to Bootstrap stylesheet-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <!--Link to external stylesheet-->
+      <link rel="stylesheet" href="Assets/CSS/style.css">
+      <!--Link to JavaScript-->
+      <script src="script.js"></script>
+   </head>
+   <body>
+      <main class = "container pt-3">
+         <section class ="jumbotron">
+            <h1>Password Generator</h1>
+            <br>
+            <section class = "jumbotron" id = "smallJumbotron">
+               <h2> Generate a Password</h2>
+               <section class="form-group">
+                  <section class="col-sm-12">
+                     <label for="TextArea"></label>
+                     <textarea class="form-control" id="TextArea" placeholder="Your secure password" rows="6"></textarea>
+                     <br>
+                     <section class="form-row justify-content-center">
                         <section class="col-s-6">
-                            <button type="button" onclick="generatePassword()"class="btn btn-danger">Generate Password</button>
+                           <button type="button" onclick="generatePassword()" class="btn btn-danger">Generate Password</button>
                         </section>
                         <section class="col-s-6">
-                            <button type="button" onclick="copyPassword()" class="btn btn-success">Copy Password</button>
+                           <button type="button" onclick="copyPassword()" class="btn btn-success">Copy Password</button>
                         </section>
-                    </section>
-                </section>
+                     </section>
+                  </section>
+               </section>
             </section>
-        </section>
-    </section>
-</body>
-
-
-
+         </section>
+      </main>
+   </body>
 </html>
