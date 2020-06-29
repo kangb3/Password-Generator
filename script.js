@@ -53,7 +53,8 @@ function generatePassword(){
 
 
 
-
+            //Loop to randomly select characters that are appended to string charset containing user selected character keys
+            //Repeats the based on user input for number of characters desired
             for(var i = 0; i < numOfChar; i++){
                 if(confirmSpecialChar){
                     password += charSet.charAt(Math.floor(Math.random() * charSet.length));
@@ -80,7 +81,7 @@ function copyPassword(){
     var copyText = document.getElementById("TextArea");
     copyText.select();
     document.execCommand("copy"); 
-    alert("Your password, ${copyText.value} was copied to your clipboard.");
+    alert(`Your password, ${copyText.value} was copied to your clipboard.`);
 
 }
 
