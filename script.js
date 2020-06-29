@@ -75,4 +75,13 @@ function generatePassword(){
     console.log(password);
 }
 
+
+function copyPassword(){
+    var copyText = document.getElementById("TextArea");
+    copyText.select();
+    document.execCommand("copy"); 
+    alert("Your password, ${copyText.value} was copied to your clipboard.");
+
+}
+
 //generatePassword();
